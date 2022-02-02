@@ -10,10 +10,8 @@ module.exports = (req, res) => {
 
   const pathname = url.parse(req.url).pathname;
 
-  console.log(pathname)
   if (pathname === '/cats/add-cat' && req.method === 'GET') {
     // Load the add form 
-
 
     let filePath = path.normalize(path.join(__dirname, '../views/addCat.html'))
     const index = fs.createReadStream(filePath);

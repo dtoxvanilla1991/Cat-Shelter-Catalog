@@ -9,6 +9,9 @@ html, body {
     font-family: 'Lato', sans-serif;
     background-color: #F2F2F2;
     color: #333;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .navigation {
@@ -108,16 +111,24 @@ form button:hover {
     list-style: none;
     margin-top: 3rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+
+
 }
 
 .cats li {
-    width: 26.5%;
-    margin-left: 5rem;
-    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom:45px;
     background-color: #fff;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.cat li:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.25), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .cats ul li .buttons {
@@ -125,29 +136,51 @@ form button:hover {
     position: relative;
     left: 1rem;
     border:1px splid black;
+    padding: 0;
+}
+
+ul .buttons {
+    position: relative;
+    justify-content: space-evenly;
+    
 }
 
 .buttons li {
-    margin-left: 2rem;
+    display: flex;
+    box-shadow: none;
 }
 
 .cats ul li .buttons .btn a{
-    text-align: center;
-    padding: 5px;
-    border-radius: 17px;
-    color: #fff;
+    /* text-align: center;
+    padding: 5px; */
+    border-radius: 10px;
+    /* color: #fff;
     font-weight: 700;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
+    align-self: center;
+    padding: 7px 12px;
+    color: white;
+    font-family: arial;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
 }
 
 
-.cats ul li .buttons .edit a{
+.cats .buttons .edit a{
     background-color: #3d99e3;
+
 }
 
-.cats ul li .buttons .delete a{
-    background-color: #ff0000d6;
+.cats .buttons .delete a{
+    background-color: rgb(255, 85,85);
 }
 
 
@@ -157,7 +190,10 @@ form button:hover {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     margin: 0 auto;
+    padding-top: 10px;
     display: block;
+    border-radius: 2rem;
+
 }
 
 .cat-form img {
@@ -185,7 +221,6 @@ body > form > label:nth-child(3) {
 }
 
 .cats ul li:hover {
-    opacity: 0.75;
     transform: scale(0.98);
 }
 
