@@ -51,7 +51,7 @@
 "Cat Shelter" is an online cat catalog, which shows the database of kittens looking for their new home. Full CRUD ops can be performed with cat objects.
 Code written using raw Node.js for everything: parsing of the requests, doing the templating myself, serving static files, all the back-end logic etc.
 The challenge and a goal of the project was to create a fully functioning web product using nothing but raw Node.js and its core modules/libraries and it has been successfully accomplished.
-
+<img width="1013" alt="image" src="https://user-images.githubusercontent.com/73205087/154597503-c2085a7e-3c48-4906-a4d1-58978d918956.png">
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
